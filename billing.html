@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bill</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="toggle" onclick="toggleNav()">☰</div>
+
+<nav id="sidebar">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="payment.html">Payment</a>
+<a href="admin.html">Admin</a>
+</nav>
+<div id="overlay" onclick="toggleNav()"></div>
+
+
+<div class="bill-wrapper">
+
+<div id="billBox" class="bill-card pdf-style">
+
+
+<h2>SRK CAFE ☕</h2>
+
+<div class="bill-info">
+  <span>Bill No: <b id="billNo"></b></span>
+  <span>Date: <b id="billDate"></b></span>
+</div>
+
+<table class="bill-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>Qty</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody id="billItems"></tbody>
+</table>
+
+<div class="bill-total-box">
+Total ₹ <span id="billTotal"></span>
+</div>
+
+<p class="thanks">Thank you! Visit again 💛</p>
+
+</div>
+
+<button class="download-btn" onclick="downloadPDF()">Download Receipt PDF</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

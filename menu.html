@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="toggle" onclick="toggleNav()">☰</div>
+
+<nav id="sidebar">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="payment.html">Payment</a>
+<a href="billing.html">Billing</a>
+<a href="admin.html">Admin</a>
+</nav>
+<div id="overlay" onclick="toggleNav()"></div>
+
+
+<h2>Menu</h2>
+
+<div class="menu" id="menuItems"></div>
+
+<div class="cart">
+<h3>Cart</h3>
+<ul id="cartList"></ul>
+<p>Total ₹<span id="total">0</span></p>
+<button onclick="goToPayment()">Order Now</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

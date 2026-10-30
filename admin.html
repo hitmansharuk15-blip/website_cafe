@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="toggle" onclick="toggleNav()">☰</div>
+
+<nav id="sidebar">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+</nav>
+<div id="overlay" onclick="toggleNav()"></div>
+
+<h2>Admin Panel</h2>
+
+<input id="itemName" placeholder="Item Name">
+<input id="itemPrice" type="number" placeholder="Price">
+<input type="file" id="itemImg">
+
+<button onclick="addMenuItem()">Add Item</button>
+
+<ul id="adminList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>

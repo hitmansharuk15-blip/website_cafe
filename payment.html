@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="toggle" onclick="toggleNav()">☰</div>
+
+<nav id="sidebar">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="billing.html">Billing</a>
+<a href="admin.html">Admin</a>
+</nav>
+<div id="overlay" onclick="toggleNav()"></div>
+
+<div class="pay-center">
+
+  <div class="pay-card">
+    
+    <h2>Scan to Pay</h2>
+
+    <div class="qr-glow">
+      <img src="C:\Users\acer\Pictures\WhatsApp Image 2026-01-30 at 5.24.18 PM.jpeg" class="qr-img">
+    </div>
+
+    <div class="amount-box">
+      Total ₹ <span id="payTotal"></span>
+    </div>
+
+    <button class="pay-btn" onclick="paymentDone()">Payment Completed</button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
